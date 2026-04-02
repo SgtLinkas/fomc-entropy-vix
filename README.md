@@ -8,6 +8,12 @@
 Empirical research project studying the **causal effect of FOMC communication
 uncertainty on market volatility (VIX)**.
 
+[![Key Result](charts/fomc_entropy_chart_REAL.png)](charts/fomc_entropy_chart_REAL.png)
+
+*Lukas Theriault-Kohler | LMU München | BSc Statistics + Wirtschaftspsychologie*
+
+</div>
+
 ## Repository layout
 
 ```
