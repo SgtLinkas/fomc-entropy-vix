@@ -3,7 +3,7 @@
 <img src="https://img.shields.io/badge/Python-3.10%2B-brightgreen" alt="Python">
 <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
 
-# fomc-entropy
+# fomc-entropy-vix
 
 Empirical research project studying the **causal effect of FOMC communication
 uncertainty on market volatility (VIX)**.
