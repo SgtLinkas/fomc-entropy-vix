@@ -11,7 +11,7 @@ Empirical macro finance research project studying whether FOMC communication com
 
 I find a positive relationship between FOMC statement entropy and subsequent VIX moves.
 
-In a sample of 89 meetings (2015–2026), higher entropy statements are associated with larger absolute next day changes in the VIX (OLS: β = +2.03, p = 0.080). A Frisch-Waugh-Lovell residualization gives a similar result (r = 0.19, p = 0.077), while the size of the rate move itself is not significant in this specification (p = 0.31).
+In a sample of 89 meetings (2015–2026), higher entropy statements are associated with larger absolute next day changes in the VIX (OLS: β = +2.03, p = 0.080). A Frisch-Waugh-Lovell residualization gives a similar result (r = 0.19, p = 0.077 (Raw correlation r=0.27, after FWL residualization r=0.19)), while the size of the rate move itself is not significant in this specification (p = 0.31).
 
 I treat this as suggestive rather than conclusive evidence: the effect is economically interesting, but the sample is still small and the significance is at the 10% level.
 
