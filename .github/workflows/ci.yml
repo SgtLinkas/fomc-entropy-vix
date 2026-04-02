@@ -1,8 +1,6 @@
-mkdir -p .github/workflows
-cat > .github/workflows/ci.yml <<'YAML'
 name: CI
 
-on:
+"on":
   push:
     branches: [ main ]
   pull_request:
@@ -31,8 +29,3 @@ jobs:
 
       - name: Run tests
         run: pytest tests/
-YAML
-
-git add .github/workflows/ci.yml
-git commit -m "Add CI workflow"
-git push
