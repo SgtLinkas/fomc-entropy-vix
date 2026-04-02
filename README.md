@@ -11,7 +11,7 @@ uncertainty on market volatility (VIX) 2015-2026**.
 # Key Question:
 Does the way the Fed writes its statements predict how much markets move?
 
-[![Key Result](charts/fomc_entropy_chart_REAL.png)](charts/fomc_entropy_chart_REAL.png)
+[![Key Result](charts/fomc_entropy_chart.png)](charts/fomc_entropy_chart.png)
 
 What I Did
 I scraped 89 FOMC press statements (2015–2026) from federalreserve.gov, computed Shannon entropy on each, and matched them to VIX changes around each meeting. 
