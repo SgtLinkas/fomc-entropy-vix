@@ -8,10 +8,12 @@
 Empirical research project studying the **causal effect of FOMC communication
 uncertainty on market volatility (VIX) 2015-2026**.
 
-# Key Question:
-Does the way the Fed writes its statements predict how much markets move?
+# Key Results: 
 
 [![Key Result](charts/fomc_entropy_chart.png)](charts/fomc_entropy_chart.png)
+
+# Key Question:
+Does the way the Fed writes its statements predict how much markets move?
 
 # What I Did
 I scraped 89 FOMC press statements (2015–2026) from federalreserve.gov, computed Shannon entropy on each, and matched them to VIX changes around each meeting. 
