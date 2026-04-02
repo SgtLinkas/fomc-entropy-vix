@@ -5,13 +5,13 @@
 
 # fomc-entropy-vix
 
-Empirical macro-finance research project studying whether FOMC communication complexity predicts post-meeting market volatility (VIX), 2015–2026.
+Empirical macro finance research project studying whether FOMC communication complexity predicts post meeting market volatility (VIX), 2015–2026.
 
 ## Main Findings
 
 I find a positive relationship between FOMC statement entropy and subsequent VIX moves.
 
-In a sample of 89 meetings (2015–2026), higher-entropy statements are associated with larger absolute next-day changes in the VIX (OLS: β = +2.03, p = 0.080). A Frisch-Waugh-Lovell residualization gives a similar result (r = 0.19, p = 0.077), while the size of the rate move itself is not significant in this specification (p = 0.31).
+In a sample of 89 meetings (2015–2026), higher entropy statements are associated with larger absolute next day changes in the VIX (OLS: β = +2.03, p = 0.080). A Frisch-Waugh-Lovell residualization gives a similar result (r = 0.19, p = 0.077), while the size of the rate move itself is not significant in this specification (p = 0.31).
 
 I treat this as suggestive rather than conclusive evidence: the effect is economically interesting, but the sample is still small and the significance is at the 10% level.
 
@@ -107,12 +107,12 @@ Exploratory IV / 2SLS code is included in analysis/iv_estimation.py, but I treat
 
 - The sample is relatively small (N = 89), so statistical power is limited.
 - The main results are significant at the 10% level, not the 5% level.
-- A cleaner high-frequency policy surprise measure would improve identification.
+- A cleaner high frequency policy surprise measure would improve identification.
 - Extending the sample further back in time would make the analysis more informative.
 
 ## Further planned actions
 
 - extend the sample further back in time
-- replace the simple policy-rate proxy with a cleaner surprise measure
+- replace the simple policy rate proxy with a cleaner surprise measure
 - test richer NLP measures beyond unigram entropy
 - compare results across hike / hold / cut regimes
