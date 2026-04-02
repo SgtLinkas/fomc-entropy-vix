@@ -17,15 +17,15 @@ uncertainty on market volatility (VIX)**.
 ## Repository layout
 
 ```
-paper1-fomc-causal/
-├── data/
-│   ├── fetch_fomc_statements.py      # Scrape FOMC press statements from federalreserve.gov
-│   ├── fetch_fed_funds_futures.py    # Download Fed Funds rate / futures data from FRED
-│   └── fetch_vix.py                  # Download CBOE VIX from Yahoo Finance or FRED
+fomoc-entropy-vix/
 ├── analysis/
 │   ├── entropy_calculation.py        # Shannon entropy & Loughran-McDonald uncertainty index
 │   ├── iv_estimation.py              # 2SLS / IV estimation (entropy → VIX)
 │   └── event_study.py               # Abnormal VIX change around FOMC meeting dates
+├── data/
+│   ├── fetch_fomc_statements.py      # Scrape FOMC press statements from federalreserve.gov
+│   ├── fetch_fed_funds_futures.py    # Download Fed Funds rate / futures data from FRED
+│   └── fetch_vix.py 
 ├── notebooks/
 │   └── fomc_entropy_vs_vix.ipynb    # Charts: entropy vs VIX (for Teza)
 ├── tests/
