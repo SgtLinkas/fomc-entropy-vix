@@ -93,11 +93,26 @@ pytest tests/
 
 ## Methodology
 
-1. **Entropy** – Shannon entropy of the unigram token distribution in each
-   FOMC post-meeting press statement.  Higher entropy → more diverse vocabulary
-   → greater communication *complexity / uncertainty*.
-2. **IV / 2SLS** – Fed Funds rate surprises (post − pre FOMC implied rate)
-   serve as the excluded instrument for entropy to break potential endogeneity
-   between communication and market conditions.
-3. **Event study** – Abnormal log-changes in VIX in a ±10 trading-day window
-   around each meeting, with a 120-day pre-event estimation window.
+1. **Entropy** – Shannon entropy of the unigram token distribution in each FOMC post-meeting press statement. 
+    Higher entropy means a more dispersed vocabulary and a less concentrated textual signal.
+2. **Baseline regression** – Entropy is related to next-day absolute VIX changes,
+    controlling for the size of the rate move and prior market conditions.
+3. **Event-study perspective** – I examine abnormal VIX changes around FOMC meeting dates using a short post-meeting window.
+
+## Extensions
+
+Exploratory IV / 2SLS code is included in analysis/iv_estimation.py, but I treat it as an extension rather than the main identification claim.
+
+## Limitations
+
+The sample is relatively small (N = 89), so statistical power is limited.
+The main results are significant at the 10% level, not the 5% level.
+A cleaner high-frequency policy surprise measure would improve identification.
+Extending the sample further back in time would make the analysis more informative.
+
+## Further planned actions
+
+extend the sample further back in time
+replace the simple policy-rate proxy with a cleaner surprise measure
+test richer NLP measures beyond unigram entropy
+compare results across hike / hold / cut regimes
