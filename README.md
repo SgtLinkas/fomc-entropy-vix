@@ -1,4 +1,4 @@
-# paper1-fomc-causal
+# fomc-entropy
 
 Empirical research project studying the **causal effect of FOMC communication
 uncertainty on market volatility (VIX)**.
