@@ -13,7 +13,7 @@ Does the way the Fed writes its statements predict how much markets move?
 
 [![Key Result](charts/fomc_entropy_chart.png)](charts/fomc_entropy_chart.png)
 
-What I Did
+# What I Did
 I scraped 89 FOMC press statements (2015–2026) from federalreserve.gov, computed Shannon entropy on each, and matched them to VIX changes around each meeting. 
 The key control variable is the actual rate change in basis points (from FRED's DFEDTARU series), which I use to separate the "what they decided" effect from the "how they communicated" effect.
 
@@ -29,6 +29,8 @@ fomoc-entropy-vix/
 │   ├── entropy_calculation.py        # Shannon entropy & Loughran-McDonald uncertainty index
 │   ├── iv_estimation.py              # 2SLS / IV estimation (entropy → VIX)
 │   └── event_study.py               # Abnormal VIX change around FOMC meeting dates
+├── charts/
+│   └── fomc_entropy_chart.png
 ├── data/
 │   ├── fetch_fomc_statements.py      # Scrape FOMC press statements from federalreserve.gov
 │   ├── fetch_fed_funds_futures.py    # Download Fed Funds rate / futures data from FRED
