@@ -6,7 +6,7 @@
 # fomc-entropy-vix
 
 Empirical research project studying the **causal effect of FOMC communication
-uncertainty on market volatility (VIX)**.
+uncertainty on market volatility (VIX) 2015-2026**.
 
 [![Key Result](charts/fomc_entropy_chart_REAL.png)](charts/fomc_entropy_chart_REAL.png)
 
