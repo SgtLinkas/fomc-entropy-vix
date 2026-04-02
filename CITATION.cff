@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "fomc-entropy-vix"
+message: "If you use this repository, please cite it as below."
+type: software
+authors:
+  - family-names: "Hübner"
+    given-names: "Lukas"
+repository-code: "https://github.com/SgtLinkas/fomc-entropy-vix"
+abstract: "Empirical macro-finance project studying whether FOMC communication complexity predicts post-meeting market volatility (VIX), 2015–2026."
+license: MIT
