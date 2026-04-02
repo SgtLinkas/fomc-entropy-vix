@@ -8,7 +8,14 @@
 Empirical research project studying the **causal effect of FOMC communication
 uncertainty on market volatility (VIX) 2015-2026**.
 
+# Key Question:
+Does the way the Fed writes its statements predict how much markets move?
+
 [![Key Result](charts/fomc_entropy_chart_REAL.png)](charts/fomc_entropy_chart_REAL.png)
+
+What I Did
+I scraped 89 FOMC press statements (2015–2026) from federalreserve.gov, computed Shannon entropy on each, and matched them to VIX changes around each meeting. 
+The key control variable is the actual rate change in basis points (from FRED's DFEDTARU series), which I use to separate the "what they decided" effect from the "how they communicated" effect.
 
 *Lukas Hübner | LMU München | BSc Statistics + Wirtschaftspsychologie*
 
@@ -27,7 +34,7 @@ fomoc-entropy-vix/
 │   ├── fetch_fed_funds_futures.py    # Download Fed Funds rate / futures data from FRED
 │   └── fetch_vix.py 
 ├── notebooks/
-│   └── fomc_entropy_vs_vix.ipynb    # Charts: entropy vs VIX (for Teza)
+│   └── fomc_entropy_vs_vix.ipynb    # Charts: entropy vs VIX
 ├── tests/
 │   ├── test_entropy_calculation.py
 │   ├── test_event_study.py
