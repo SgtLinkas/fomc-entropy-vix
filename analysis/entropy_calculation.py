@@ -5,11 +5,11 @@ Computes text-based entropy measures for FOMC press statements.
 
 Two entropy variants are computed:
 
-1. **Unigram Shannon entropy**
+1. Unigram Shannon entropy
    H = -Σ p_i * log2(p_i)
    where p_i is the relative frequency of word i in the statement.
 
-2. **Sentence-level uncertainty index** (following Loughran-McDonald
+2. Sentence-level uncertainty index (following Loughran-McDonald
    uncertainty word list, optionally).
 
 The main entry point reads a CSV of FOMC statements (produced by
