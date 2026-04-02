@@ -5,28 +5,35 @@
 
 # fomc-entropy-vix
 
-Empirical research project studying the **causal effect of FOMC communication
-uncertainty on market volatility (VIX) 2015-2026**.
+Empirical macro-finance research project studying whether FOMC communication complexity predicts post-meeting market volatility (VIX), 2015–2026.
 
-# Key Results: 
+## Main Findings
+
+I find a positive relationship between FOMC statement entropy and subsequent VIX moves.
+
+In a sample of 89 meetings (2015–2026), higher-entropy statements are associated with larger absolute next-day changes in the VIX (OLS: β = +2.03, p = 0.080). A Frisch-Waugh-Lovell residualization gives a similar result (r = 0.19, p = 0.077), while the size of the rate move itself is not significant in this specification (p = 0.31).
+
+I treat this as suggestive rather than conclusive evidence: the effect is economically interesting, but the sample is still small and the significance is at the 10% level.
 
 [![Key Result](charts/fomc_entropy_chart.png)](charts/fomc_entropy_chart.png)
 
-# Key Question:
+## Research Question
+
 Does the way the Fed writes its statements predict how much markets move?
 
-# What I Did
-I scraped 89 FOMC press statements (2015–2026) from federalreserve.gov, computed Shannon entropy on each, and matched them to VIX changes around each meeting. 
-The key control variable is the actual rate change in basis points (from FRED's DFEDTARU series), which I use to separate the "what they decided" effect from the "how they communicated" effect.
+## What I Did
+
+I scraped 89 FOMC press statements (2015–2026) from federalreserve.gov, computed Shannon entropy for each statement, and matched the results to VIX reactions around meeting dates.
+
+The baseline analysis controls for the size of the rate move, so the goal is to separate the "what they decided" effect from the "how they communicated" effect.
 
 *Lukas Hübner | LMU München | BSc Statistics & Data Science + Business Psychology*
-
 </div>
 
 ## Repository layout
 
 ```
-fomoc-entropy-vix/
+fomc-entropy-vix/
 ├── analysis/
 │   ├── entropy_calculation.py        # Shannon entropy & Loughran-McDonald uncertainty index
 │   ├── iv_estimation.py              # 2SLS / IV estimation (entropy → VIX)
