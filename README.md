@@ -36,8 +36,8 @@ The baseline analysis controls for the size of the rate move, so the goal is to 
 fomc-entropy-vix/
 ├── analysis/
 │   ├── entropy_calculation.py        # Shannon entropy & Loughran-McDonald uncertainty index
-│   ├── iv_estimation.py              # 2SLS / IV estimation (entropy → VIX)
-│   └── event_study.py               # Abnormal VIX change around FOMC meeting dates
+│   ├── iv_estimation.py              # Regression and exploratory IV analysis
+│   └── event_study.py                # Abnormal VIX change around FOMC meeting dates
 ├── charts/
 │   └── fomc_entropy_chart.png
 ├── data/
@@ -105,14 +105,14 @@ Exploratory IV / 2SLS code is included in analysis/iv_estimation.py, but I treat
 
 ## Limitations
 
-The sample is relatively small (N = 89), so statistical power is limited.
-The main results are significant at the 10% level, not the 5% level.
-A cleaner high-frequency policy surprise measure would improve identification.
-Extending the sample further back in time would make the analysis more informative.
+- The sample is relatively small (N = 89), so statistical power is limited.
+- The main results are significant at the 10% level, not the 5% level.
+- A cleaner high-frequency policy surprise measure would improve identification.
+- Extending the sample further back in time would make the analysis more informative.
 
 ## Further planned actions
 
-extend the sample further back in time
-replace the simple policy-rate proxy with a cleaner surprise measure
-test richer NLP measures beyond unigram entropy
-compare results across hike / hold / cut regimes
+- extend the sample further back in time
+- replace the simple policy-rate proxy with a cleaner surprise measure
+- test richer NLP measures beyond unigram entropy
+- compare results across hike / hold / cut regimes
