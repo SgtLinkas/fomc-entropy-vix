@@ -19,7 +19,7 @@ Does the way the Fed writes its statements predict how much markets move?
 I scraped 89 FOMC press statements (2015–2026) from federalreserve.gov, computed Shannon entropy on each, and matched them to VIX changes around each meeting. 
 The key control variable is the actual rate change in basis points (from FRED's DFEDTARU series), which I use to separate the "what they decided" effect from the "how they communicated" effect.
 
-*Lukas Hübner | LMU München | BSc Statistics + Wirtschaftspsychologie*
+*Lukas Hübner | LMU München | BSc Statistics & Data Science + Business Psychology*
 
 </div>
 
